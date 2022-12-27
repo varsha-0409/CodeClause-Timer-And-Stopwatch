@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  /*box-sizing: border-box;*/
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+   background: linear-gradient(to right, #883be7, #7b7a7b);
+  text-align: center;
+}
+.wrapper{
+  /*background: rgb(164, 142, 154);
+  padding: 20px 30px;
+  /*box-shadow: 0px 0px 10px #080808;*/
+}
+.wrapper .text{
+  font-size: 45px;
+  font-weight: 600;
+}
+.wrapper p{
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 40px;
+}
+.wrapper .btns{
+  display: flex;
+  margin: 70px 0 50px 0;
+}
+.btns a{
+  position: relative;
+  margin: 0 70px;
+  height: 90px;
+  width: 300px;
+  display: block;
+  line-height: 80px;
+  border-radius: 60px;
+  text-align: center;
+  align-self: center    ;
+  text-align: bottom;
+  text-decoration: none;
+  color: rgb(245, 242, 242);
+  font-size: 28px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(205, 202, 202, 0.2);
+}
+.btns a:first-child{
+  background: linear-gradient(-90deg, #030303, #6d6769);
+}
+.btns a:last-child{
+  background: linear-gradient(90deg, #160e12, #a89da1);
+}
+.btns a > span{
+  position: absolute;
+  background: rgb(247, 243, 243);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: ripples 0.6s linear infinite;
+}
+@keyframes ripples {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0.5;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}
